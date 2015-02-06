@@ -1,0 +1,10 @@
+var smpform = document.getElementsByName('SMPFORM').item(0);
+document.open();
+document.write('<a href="https://reg18.smp.ne.jp/spiral/servlet/seal.Seal?s=53EqIE&lang=ja&_act=GetDetail" target="_blank">');
+if(smpform!=null){
+document.write('<img alt="" title="SPIRAL SEAL" src="https://reg18.smp.ne.jp/spiral/servlet/seal.Seal?s=53EqIE&lang=ja&SMPFORM=' + smpform.value + '&_act=GetSeal" style="border:0px;float:right;" />');
+}else{
+document.write('<img alt="" title="SPIRAL SEAL" src="https://reg18.smp.ne.jp/spiral/servlet/seal.Seal?s=53EqIE&lang=ja&_act=GetSeal" style="border:0px;float:right;" />');
+}
+document.write('</a>');
+document.close();
